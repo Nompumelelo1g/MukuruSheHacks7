@@ -1,109 +1,120 @@
-@media (min-width: 768px){
-    body {
-            background: #f7bf9c;
-            background-image: url("..resources/src/model.jpeg") no-repeat;
-    
-            .granny {
-                display: block;
-            }
-    
-        }
-    
-        .logo img {
-            display: block;
-            margin: 0 auto;
-            max-width: 300px;
-        }
-    
-        main {
-            text-align: center;
-            font-size: 150px;
-            font-family: PT mono;
-            padding: 25px 25px;
-        }
-    
-        main:hover {
-            background: #3399FF;
-            margin-left: 200px;
-            margin-left: 200px;
-    
-        }
-    
-        .buttons {
-            display: flex;
-            justify-content: center;
-            margin-top: 20px;
-            margin-left: 20px 0px 20px 0px;
-        }
-    
-        .button {
-            display: inline-block;
-            margin: 10px 10px;
-            /* Adjust the horizontal margin for spacing */
-            padding: 20px 20px;
-            background-color: #55f;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            font-weight: bold;
-            transition: background-color 0.3s;
-        }
-    
-        .button:hover {
-            background-color: #3399FF;
-        }
-    
-        .language-selector {
-            position: absolute;
-            display: inline;
-            top: 20px;
-            right: 20px;
-        }
-    
-        #language-select {
-            color: #FF5100;
-            padding: 5px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            background-color: #4A4A49;
-        }
-    
-        .granny {
-            width: 30%;
-        }
 
+body {
+        background: #f7bf9c;
+        display: grid;
+        width: 100%;
+        grid-template-columns: 30% 50% 20%;
+        grid-template-rows: 50% 50%;
+}
+.granny img{
+    grid-column: 2/2;
+}
+
+.logo img {
+    grid-column: 1/1;
+    width: 250px;
+    padding: 1em;
+}
+
+.logo .name{
+    font-size: 3rem;
+    color: #f7f7f7;
+    margin: 0 1em;
 }
 .desc{
+    grid-column: 1/1;
+    grid-row: 2/3;
     background-color: #4A4A49;
     padding: 2em;
-    margin: 0 19rem;
+    
     width: 100%;
 }
+.content{
+    color: #f7f7f7;
+    font-size: 2em;
+}
+
+main:hover {
+    background: #3399FF;
+    margin-left: 200px;
+    margin-left: 200px;
+
+}
+
+/* .buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-left: 20px 0px 20px 0px;
+} */
+
+/* .button {
+    display: inline-block;
+    margin: 10px 10px;
+    /* Adjust the horizontal margin for spacing */
+    /* padding: 20px 20px;
+    background-color: #55f;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s; */
+/* } */ 
+
+.button:hover {
+    background-color: #3399FF;
+}
+
+.language-selector {
+    position: absolute;
+    display: inline;
+    top: 20px;
+    right: 20px;
+}
+
+#language-select {
+    color: #FF5100;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #4A4A49;
+}
+
+.granny {
+    width: 30%;
+}
+
+
+
 
 
 @media only screen and (max-width: 768px) {
     body{
-        /* width: 100%; */
         padding: 0;
+        margin: 0;
         background-image: url("../resources/src/model.jpeg");
+        background-size: 100%;
         background-repeat: no-repeat;
         background-position: 0%;
     }
     .granny .gran{
         display: none;
     }
-    .logo{
-        width: 2em;
+    .logo img{
+        padding: 0;
+        margin: 0;
+        width: 30%;
     }
     .logo .name{
-        font-size: 5em;
-        padding: 0;
+        font-size: 3em;
+        padding: 10px;
         color: #f7f7f7;
     }
     .desc{
         background-color: #4A4A49;
         padding: 2em;
-        margin: 0 19rem;
+        margin-left: 5em;
+        margin-right:0em;
         width: 50%;
     }
     .desc .content{
@@ -112,12 +123,14 @@
         color: #f7f7f7;
     }
     .buttons{
-        margin-left: 20em;
-        padding: 0;
+        /* margin-left: 20em; */
+        padding: 3em 0;
     }
     .button{
-        margin: 0 2em;
+        margin: 2em;
+        padding: 1em 2em;
         background-color:#FF5100;
+        
     }
 
 }
@@ -132,7 +145,6 @@
     }
     body{
         padding: 0;
-        background-image: url("../resources/src/model.jpeg");
         background-size:cover;
         /* background-position: 0%; */
         /* height: fit-content; */
