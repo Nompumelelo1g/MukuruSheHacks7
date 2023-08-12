@@ -66,12 +66,14 @@ main:hover{
         /* width: 100%; */
         padding: 0;
         background-image: url("../resources/src/model.jpeg");
+        background-repeat: no-repeat;
+        background-position: 0%;
     }
     .granny .gran{
         display: none;
     }
     .logo{
-        width: min-content;
+        width: 2em;
     }
     .logo .name{
         font-size: 5em;
@@ -93,6 +95,9 @@ main:hover{
         margin-left: 20em;
         padding: 0;
     }
-    .bu
+    .button{
+        margin: 0 2em;
+        background-color:#FF5100;
+    }
 
 }
