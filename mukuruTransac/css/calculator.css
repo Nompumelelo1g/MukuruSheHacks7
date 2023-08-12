@@ -15,7 +15,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: rgb(211, 103, 8) center/cover url("../img/mukuru1.jpg") no-repeat;
+    background: rgb(211, 103, 8) center/cover url("../resources/src/image.png") no-repeat;
     /* background-image: url("../img/mukuru1.jpg"); */
     /* background: linear-gradient( rgb(211, 103, 8), rgb(247, 211, 176)); */
     position: relative;
