@@ -73,6 +73,12 @@
         }
 
 }
+.desc{
+    background-color: #4A4A49;
+    padding: 2em;
+    margin: 0 19rem;
+    width: 100%;
+}
 
 
 @media only screen and (max-width: 768px) {
@@ -112,6 +118,46 @@
     .button{
         margin: 0 2em;
         background-color:#FF5100;
+    }
+
+}
+@media only screen and (max-width: 367px){
+    .logo img{
+        width: 200px;
+    }
+    .logo .name{
+        font-size: 3em;
+        padding: 0;
+        color: #f7f7f7;
+    }
+    body{
+        padding: 0;
+        background-image: url("../resources/src/model.jpeg");
+        background-size:cover;
+        /* background-position: 0%; */
+        /* height: fit-content; */
+    }
+    .desc{
+        background-color: #4A4A49;
+        /* padding: 2em; */
+        margin: 0;
+        width: fit-content;
+    } 
+    .buttons{
+        margin-left: 0em;
+        /* padding: 1px; */
+    }
+    .button{
+        text-align: center;
+        padding:10px 2rem;
+        background-color:#FF5100;
+    } 
+
+    footer{
+        /* padding: 1em; */
+        margin: 0;
+        /* width: 100%; */
+        background-color: #4A4A49;
     }
 
 }
