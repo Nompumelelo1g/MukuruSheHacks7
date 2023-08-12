@@ -90,6 +90,15 @@ body {
 
 }
 
+.desc .content {
+    line-height: 1.5;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+.desc .content :hover{
+    color: #FF5100;
+    background: #FF5100;
+}
 
 
 

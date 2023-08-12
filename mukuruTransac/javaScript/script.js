@@ -64,3 +64,15 @@ calculateButton.addEventListener('click', function() {
   const buttonText = this.textContent;
   speakText(buttonText);
 });
+
+// const parahraph = document.getElementById('about-mukuru');
+
+// parahraph.addEventListener('hover',function(){
+//   const par = this.textContent;
+//   speakText(par);
+// });
+// //Paragraph
+
+
+
+/////////////function to speak text 
