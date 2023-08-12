@@ -56,8 +56,43 @@ main:hover{
     border-radius: 5px;
     background-color: #4A4A49;
 }
+.granny{
+    width: 30%;
+}
 
 
-@media only screen and () {
-    
+@media only screen and (max-width: 768px) {
+    body{
+        /* width: 100%; */
+        padding: 0;
+        background-image: url("../resources/src/model.jpeg");
+    }
+    .granny .gran{
+        display: none;
+    }
+    .logo{
+        width: min-content;
+    }
+    .logo .name{
+        font-size: 5em;
+        padding: 0;
+        color: #f7f7f7;
+    }
+    .desc{
+        background-color: #4A4A49;
+        padding: 2em;
+        margin: 0 19rem;
+        width: 50%;
+    }
+    .desc .content{
+        letter-spacing: 1px;
+        padding: .5px;
+        color: #f7f7f7;
+    }
+    .buttons{
+        margin-left: 20em;
+        padding: 0;
+    }
+    .bu
+
 }
