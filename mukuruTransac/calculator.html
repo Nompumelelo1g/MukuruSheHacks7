@@ -3,54 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./css/calculator.css">
 </head>
 <body>
-     <header>
-        <h1>Remittance Calculator</h1>
-    </header>
+​
+    <div class="container">
+        <div class="box">
+            <h2>MUKURU</h2>
+            <form action="/" method="post" >
     
-   <main>
-        <form id="remittance-form">
-            <label for="amount">Amount:</label>
-            <input type="number" id="amount" step="0.01" required>
-            
-            <label for="from-country">From Country:</label>
-            <select id="from-country" required>
-                <option value="zim"> 🇿🇼 Zimbabwe</option>
-                <option value="sa"> 🇿🇦 South Africa</option>
-                <!-- Add more countries as needed -->
-            </select>
-            
-            <label for="to-country">To Country:</label>
-            <select id="to-country" required>
-                <option value="zim">Zimbabwe</option>
-                <option value="sa">South Africa</option>
-                <!-- Add more countries as needed -->
-            </select>
-
-            <label for="from-currency">From Currency:</label>
-            <select id="from-currency" required>
-                <!-- <input type="text" id="from-currency" required> -->
-                <option value="sa"> 🇿🇦 South Africa</option>
-                <option value="zim"> 🇿🇼 Zimbabwe</option>
-            </select>
-            
-            <label for="to-currency">To Currency:</label>
-            <select id="to-currency" required>
-                <option value="sa"> 🇿🇦 South Africa</option>
-                <option value="zim"> 🇿🇼 Zimbabwe</option>
-
-            </select>
-            
-            <!-- <input type="text" id="to-currency" required> -->
-            
-            <button type="button" onclick="calculate()">Calculate</button>
-        </form>
-        
-        <div id="result"></div>
-    </main>
+                <div class="input_box">
+                    <input type="text" class="name" name="userFrom" id="userFrom" required>
+                    <label>Country sending FROM</label>
+                </div>
+                <div class="input_box">
+                    <input type="number" class="name" name="send"  required>
+                    <label>Amount to be sent</label>
+                </div>
     
-    <script src="java/script.js"></script>
+                <div class="input_box">
+                    <input type="text" class="password" name="userTo" id="userTo" required>
+                    <label>Country sending TO</label>
+                    <div class="password_checkbox">
+                        <p>Amount charged:  R120</p>
+                    </div>
+                    <div class="password_checkbox">
+                        <p>Conversion rate: R120</p>
+                    </div>
+                    <div class="password_checkbox">
+                        <p>Money to be recieved:</p>
+                    </div>
+                </div>
+    
+                <button class="signup_button" type="submit">Calculate</button>
+​
+                <div class="login_link">
+                    <a href="#">Need help ?</a>
+                </div>
+​
+            </form>
+        </div>
+    </div>
+​
+​
+    
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
