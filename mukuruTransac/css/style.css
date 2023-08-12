@@ -37,31 +37,30 @@ body {
     font-size: 2em;
 }
 
-main:hover {
-    background: #3399FF;
-    margin-left: 200px;
-    margin-left: 200px;.granny img{
-        grid-column: 2/2;
-        grid-row: 1/3;
-    }
-    justify-content: center;
+.buttons{
+    display:block;
+    grid-row: 2/3;
+    justify-content:space-evenly;
+    /* Center horizontally */
     margin-top: 20px;
-    margin-left: 20px 0px 20px 0px;
+  
 }
 
 .button {
-    /* display: inline-block; */
-    
-    margin: 10px 10px;
-    /* Adjust the horizontal margin for spacing */
-    padding: 20px 20px;
+    margin: 40px auto;
+    text-align: center;
+    padding: 10px 20px; 
     background-color: #FF5100;
+    font-size: 14px;
     color: white;
     text-decoration: none;
+    border: none;
     border-radius: 5px;
+    cursor: pointer;
     font-weight: bold;
     transition: background-color 0.3s;
 }
+
 
 .button:hover {
     background-color: #3399FF;
