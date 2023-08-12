@@ -7,42 +7,48 @@
     <link rel="stylesheet" href="./css/calculator.css">
 </head>
 <body>
-​
-    <div class="container">
-        <div class="box">
-            <h2>MUKURU</h2>
-            <form action="/" method="post" >
-    
-                <div class="input_box">
-                    <input type="text" class="name" name="userFrom" id="userFrom" required>
-                    <label>Country sending FROM</label>
+    <div class="main">
+        
+    ​
+        <div class="container">
+            <div class="box">
+                <div class="header" id="logo">
+                    <img src="./resources/src/unnamed.png" alt="" class="logo">
+                    <h2>MUKURU</h2>
                 </div>
-                <div class="input_box">
-                    <input type="number" class="name" name="send"  required>
-                    <label>Amount to be sent</label>
-                </div>
-    
-                <div class="input_box">
-                    <input type="text" class="password" name="userTo" id="userTo" required>
-                    <label>Country sending TO</label>
-                    <div class="password_checkbox">
-                        <p>Amount charged:  R120</p>
+                <form action="/" method="post" >
+        
+                    <div class="input_box">
+                        <input type="text" class="name" name="userFrom" id="userFrom" required>
+                        <label>Country sending FROM</label>
                     </div>
-                    <div class="password_checkbox">
-                        <p>Conversion rate: R120</p>
+                    <div class="input_box">
+                        <input type="number" class="name" name="send"  required>
+                        <label>Amount to be sent</label>
                     </div>
-                    <div class="password_checkbox">
-                        <p>Money to be recieved:</p>
+        
+                    <div class="input_box">
+                        <input type="text" class="password" name="userTo" id="userTo" required>
+                        <label>Country sending TO</label>
+                        <div class="password_checkbox">
+                            <p>Amount charged:  R120</p>
+                        </div>
+                        <div class="password_checkbox">
+                            <p>Conversion rate: R120</p>
+                        </div>
+                        <div class="password_checkbox">
+                            <p>Money to be recieved:</p>
+                        </div>
                     </div>
-                </div>
-    
-                <button class="signup_button" type="submit">Calculate</button>
-​
-                <div class="login_link">
-                    <a href="#">Need help ?</a>
-                </div>
-​
-            </form>
+        
+                    <button class="signup_button" type="submit">Calculate</button>
+    ​
+                    <div class="login_link">
+                        <a href="#">Need help ?</a>
+                    </div>
+    ​
+                </form>
+            </div>
         </div>
     </div>
 ​
